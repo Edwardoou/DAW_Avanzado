@@ -1,0 +1,23 @@
+{
+  "name": "semana2",
+  "version": "1.0.0",
+  "description": "Teoria semana 2",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx nodemon index.js"
+  },
+  "keywords": [
+    "tecsup",
+    "node"
+  ],
+  "author": "Alex Ramos",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
