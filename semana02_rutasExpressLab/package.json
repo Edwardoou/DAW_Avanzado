@@ -1,0 +1,23 @@
+{
+  "name": "semana02_rutasnodelab",
+  "version": "1.0.0",
+  "description": "Lab de AWA",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "Tecsup",
+    "node"
+  ],
+  "author": "Alex Ramos",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
