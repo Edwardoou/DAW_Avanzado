@@ -78,11 +78,7 @@
                         <span class="help-block small">Escriba su mensaje</span>
                       </div>
                       <div>
-                        <button
-                          type="submit"
-                          class="btn btn-accent"
-                          onclick="enviar()"
-                        >
+                        <button type="submit" class="btn btn-accent">
                           Enviar mensaje
                         </button>
                       </div>
@@ -102,35 +98,7 @@
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="scripts/luna.js"></script>
     <script src="/socket.io/socket.io.js"></script>
-    <!-- App scripts -->
-    <script>
-      const socket = io();
-      const form = document.querySelector("form");
-      const input = document.querySelector("input");
-
-      let mensajes = document.querySelector("ul");
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        if (input.value) {
-          socket.emit("chat", input.value);
-          input.value = "";
-        }
-      });
-
-      socket.on(chat, (msg) => {
-        console.log(msg);
-        let item = document.createElement("li");
-        item.textContent = msg;
-        mensajes.appendChild(item);
-        window.scrollTo(0, document.body.scrollHeight);
-      });
-
-      /* function enviar() {
-        socket.on("chat", (msg) => {
-          socket.emit("chat", msg);
-          console.log("Mensaje:" + msg);
-        });
-      } */
-    </script>
+    <!-- Chat scripts -->
+    <script src="./chat.js"></script>
   </body>
 </html>
