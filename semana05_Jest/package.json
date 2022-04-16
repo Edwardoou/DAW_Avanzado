@@ -1,0 +1,28 @@
+{
+  "name": "semana02_rutasnodelab",
+  "version": "1.0.0",
+  "description": "Lab de AWA",
+  "main": "index.js",
+  "scripts": {
+    "babel-node": "babel-node",
+    "dev": "nodemon --exec npm run babel-node src/index.js",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "Tecsup",
+    "node"
+  ],
+  "author": "Alex Ramos",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.8",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "nodemon": "^2.0.15"
+  }
+}
