@@ -16,10 +16,10 @@ const router = Router();
 //rutas
 router.route("/").get(controller.getIndex);
 router.route("/login").post(controller.postLogin);
-router.route("/sign-up").post(controller.postSignUp);
+router.route("/sign-up").post(controller.createUser);
 router.route("/show-user/:id").get(controller.getUserId);
 router.route("/reset-password").post(controller.postPassword);
-router.route("/update-user/:id").put(controller.putUser);
+router.route("/update-user/:id").put(controller.updateUser);
 router.route("/delete-user/:id").delete(controller.deleteUser);
 
 export default router;
